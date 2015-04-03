@@ -10,9 +10,9 @@ At the moment there is minimal functionality and the planned 'system' has not be
 
 ## Installation
 
-```No installation instructions```
+Pull the files from the repo and install on your server.
 
-## Helping Out**
+## Helping Out
 
 We want people to get excited about Cord3 and the development process. Why?
 
