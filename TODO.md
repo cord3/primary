@@ -6,4 +6,5 @@ Please note that the 'system' - the software that will provide the functionality
 
 - [ ] Add more Font Awesome Icons to the <select> list when creating a new board
 - [ ] Tidy up index.html - create new javascript and CSS files for any 'loose' code
-- [ ] **IMPORTANT** Create a login HTML page and subsequent login code.
+- [x] **IMPORTANT** Create a login HTML page and subsequent login code.
+- [ ] Create the login system
