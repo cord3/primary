@@ -10,7 +10,9 @@ At the moment there is minimal functionality and the planned 'system' has not be
 
 ## Installation
 
-	Pull the files from the repo and install on your server.
+	* Download all the files in the repo
+	* Install on local and/or remote server
+	* Enjoy!
 
 ## Helping Out
 
