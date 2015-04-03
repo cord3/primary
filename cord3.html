@@ -102,10 +102,11 @@
 					<li><a href="#">My Profile</a></li>
 	                <li><a href="#">My Cards</a></li>
 	                <li><a href="#">My Settings</a></li>
-	                <li class="divider"></li>
-	                
+	                <li class="divider"></li> 
 	                <li><a href="#" id="mnu_AboutUs">About Cord3</a></li>
-	                <li><a href="#">Contact Us</a></li>
+	                <li><a href="#" id="mnu_ContactUs">Contact Us</a></li>
+	                <li class="divider"></li> 
+	                <li><a href="index.html">Log Out</a></li>
 	              </ul>
 	            </li>
 	            
@@ -133,9 +134,8 @@
 	                <li><a href="#">My Cards</a></li>
 	                <li class=""><a href="#">My Settings</a></li>
 	                <li class="divider"></li>
-	                
-	                <li><a href="#">About Cord3</a></li>
-	                <li><a href="#">Contact Us</a></li>
+	                <li><a href="#" id="mnu_AboutUs">About Cord3</a></li>
+	                <li><a href="#" id="mnu_ContactUs">Contact Us</a></li>
 		        </ul>
 		    </div>
 		</nav>
@@ -168,15 +168,12 @@
 					<div class="row" id="boardList">
 						<div class="col-sm-3">
 							<div id="btn_CreateNewBoard" class="well well-default" >
-								<p><span><i class="fa fa-plus fa-3x"></i></span><br/><br/>Create New Board</p>
+								<p><span><i class="fa fa-plus fa-3x"></i></span><br/><br/>Create Board</p>
 							</div>
 						</div>
 						
 					</div>
 					
-					
-					<p class="standard-text hidden">Create a New Organization</p>
-			
 				</div>
 			</div>
 			
@@ -192,55 +189,84 @@
 	
 	<!-- Modals -->
 	<div class="modal fade" id="aboutCord3">
-	<div class="modal-dialog modal-sm">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title">About Cord3</h4>
-	      </div>
-	      <div class="modal-body">
-				<p><strong>Lead Developer: </strong> Rob Gloginja</p>
-				<p>Cord3 is an open-source project to visually manage your projects or anything else that needs organizing.</p>
-				<p class="text-center"><a href="https://github.com/cord3/primary"><i class="fa fa-github fa-2x"></i><br/>GitHub Project</a></p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
+		<div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">About Cord3</h4>
+		      </div>
+		      <div class="modal-body">
+					<p><strong>Lead Developer: </strong> Rob Gloginja</p>
+					<p>Cord3 is an open-source project to visually manage your projects or anything else that needs organizing.</p>
+					<p class="text-center"><a href="https://github.com/cord3/primary"><i class="fa fa-github fa-2x"></i><br/>GitHub Project</a></p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+		      </div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	<div class="modal fade" id="contactCord3">
+		<div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Contact Us</h4>
+		      </div>
+		      <div class="modal-body text-center">
+					<div class="row">
+						<div class="col-md-3">
+							<span><i class="fa fa-github fa-4x"></i></span>
+						</div>
+						<div class="col-md-3">
+							<span><i class="fa fa-facebook fa-4x"></i></span>
+						</div>
+						<div class="col-md-3">
+							<span><i class="fa fa-twitter fa-4x"></i></span>
+						</div>
+						<div class="col-md-3">
+							<span><i class="fa fa-envelope fa-4x"></i></span>
+						</div>
+					</div>
+					<hr/>
+					<p><small>Cord3 is an open source project maintained by RMG Software</small></p>
+		      </div>
+		      
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 	
 	<div class="modal fade" id="searchCord3">
-	<div class="modal-dialog modal-sm">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title">Search Cord3</h4>
-	      </div>
-	      <div class="modal-body">
-			<form class="form" role="search">
-				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-					<div class="input-group-btn">
-						<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+		<div class="modal-dialog modal-sm">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Search Cord3</h4>
+		      </div>
+		      <div class="modal-body">
+				<form class="form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+						</div>
 					</div>
-				</div>
-				<br/>
-				<button type="button" class="btn btn-info btn-block" id="btn_ConfirmCreateBoard">Search</button>
-			</form>
-	      </div>
-	      
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
+					<br/>
+					<button type="button" class="btn btn-info btn-block" id="btn_ConfirmCreateBoard">Search</button>
+				</form>
+		      </div>
+		      
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 	
 	<div class="modal fade" id="createBoard">
-	
 	  <div class="modal-dialog modal-sm">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title">Create New Board</h4>
+	        <h4 class="modal-title">Create Board</h4>
 	      </div>
 	      <div class="modal-body">
 	        <p>Title</p>
@@ -274,6 +300,50 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-info" id="btn_ConfirmCreateBoard">Create</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	<div class="modal fade" id="createOrganization">
+	  <div class="modal-dialog modal-sm">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">Create Organization</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>Title</p>
+	        <input type="text" id="txtNewOrgName" name="txtNewOrgName" placeholder="" class="form-control" />
+	        <hr/>
+	        <p>Organization Color</p>
+	        <select id="colorselectorOrg">
+			    <option value="106" data-color="#67b7e1" selected="selected">blue</option>
+			    <option value="47" data-color="#d8a43c">orange</option>
+			    <option value="87" data-color="#a0ce4e">green</option>
+			    ...
+			    <option value="15" data-color="#c06091">pink</option>
+			    <option value="24" data-color="#a73437">red</option>
+			</select>
+			 
+			<input type="text" id="colorValueOrg" hidden />
+			<input type="text" id="colorColorOrg" hidden />
+			<input type="text" id="colorTitleOrg" value="blue" hidden />
+			<hr/>
+			<select id="imgOrgIcon" style="font-family: 'FontAwesome', Helvetica;" class="form-control" >
+			     <option value="fa-adjust">&#xf042; Adjust</option>
+			    <option value="fa-anchor">&#xf13d; Anchor</option>
+			    <option value="fa-archive">&#xf187; Archive</option>
+			    <option value="fa-area-chart">&#xf1fe; Area Chart</option>
+			    <option value="fa-asterisk">&#xf069; Asterisk</option>
+			</select>
+			
+			<hr/>
+			<p>Privacy</p> 
+			<small><i class="fa fa-lock"></i>&nbsp;All organizations are automatically set to Private. <a href="#">Change Privacy Setting</a></small>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-info" id="btn_ConfirmCreateOrganization">Create</button>
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
@@ -330,8 +400,12 @@
 		
 		$(document).on("click","#btn_CreateNewBoard",function() {
 			$('#createBoard').modal('show');
-			
 			$('#txtNewBoardName').focus()
+		});
+		
+		$(document).on("click","#btn_CreateNewOrganization",function() {
+			$('#createOrganization').modal('show');
+			$('#txtNewOrgName').focus()
 		});
 		
 		$(document).on("click","#btn_SearchCord3",function() {
@@ -340,6 +414,10 @@
 		
 		$(document).on("click","#mnu_AboutUs",function() {
 			$('#aboutCord3').modal('show');
+		});
+		
+		$(document).on("click","#mnu_ContactUs",function() {
+			$('#contactCord3').modal('show');
 		});
 		
 		$(document).on("click","#btn_ConfirmCreateBoard",function() {
@@ -391,6 +469,22 @@
 	 
 	    $("#setValue").click(function(e) {
 	      $("#colorselector").colorselector("setValue", 18);
+	    });
+	    
+	    $('#colorselectorOrg').colorselector({
+	          callback: function (value, color, title) {
+	              $("#colorValueOrg").val(value);
+	              $("#colorColorOrg").val(color);
+	              $("#colorTitleOrg").val(title);
+	          }
+	    });
+	 
+	    $("#setColorOrg").click(function(e) {
+	      $("#colorselectorOrg").colorselector("setColorOrg", "#008B8B");
+	    });
+	 
+	    $("#setValueOrg").click(function(e) {
+	      $("#colorselectorOrg").colorselector("setValueOrg", 18);
 	    });
 	</script>
   </body>
