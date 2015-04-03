@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cord3 &middot; Team Collaboration and Project Management</title>
+    <title>Cord3</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,11 +18,10 @@
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     
-    
+    <!-- Plugin for ColorSelector -->
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-colorselector-0.2.0/css/bootstrap-colorselector.css" />
     <script src="lib/bootstrap-colorselector-0.2.0/js/bootstrap-colorselector.js"></script>
     
-     
     <!-- custom.css - Modifications made for Cord3 -->
     <link rel="stylesheet" href="css/custom.css">
     
@@ -35,44 +34,6 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <script>
-		var idNum = 0;
-		
-		function createCard(propNum) {
-			var idName = document.getElementsByClassName('panel-body text-left')[propNum].id;
-			var curDivName = "panBody" + idNum;
-			var newDivName = "card-" + idNum;
-			var newListHeader = "list-header-" + idNum;
-			var newWellID = "well-int-" + idNum;
-			
-			 
-			var div = document.getElementById(idName);
-			var innerDiv = document.createElement('div');
-			innerDiv.setAttribute("id", newDivName);
-			div.appendChild(innerDiv);
-			
-			var div1 = document.getElementById(newDivName);
-			var innerDiv1 = document.createElement('div');
-			innerDiv1.className = 'well';
-			innerDiv1.setAttribute("id", newWellID);
-			innerDiv1.setAttribute("onclick", "loadCard("+idNum+");");
-			div1.appendChild(innerDiv1);
-			
-			var div2 = document.getElementById(newWellID);
-			var innerDiv2 = document.createElement('input');
-			innerDiv2.className = 'form-control';
-			innerDiv2.setAttribute("id", newListHeader);
-			div2.appendChild(innerDiv2);
-			innerDiv2.focus();
-			
-			idNum++;
-		}
-		
-		function loadCard(cardNum){
-			alert(cardNum);
-		}
-		
-    </script>
   </head>
   <body>
 	
@@ -185,7 +146,6 @@
 				<div class="">
 					<h4>My Organizations</h4>
 					<div class="row" id="organizationList">
-						<!-- data-toggle="modal" data-target="#createBoard" -->
 						<div class="col-sm-3">
 							<div id="btn_CreateNewOrganization" class="well well-default" >
 								
@@ -205,12 +165,10 @@
 				<div class="">
 					<h4>My Boards</h4>
 					<div class="row" id="boardList">
-						<!-- data-toggle="modal" data-target="#createBoard" -->
 						<div class="col-sm-3">
 							<div id="btn_CreateNewBoard" class="well well-default" >
 								<p><span><i class="fa fa-plus fa-3x"></i></span><br/><br/>Create New Board</p>
 							</div>
-							<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createBoard">Create New Board</button> -->
 						</div>
 						
 					</div>
@@ -288,11 +246,6 @@
 			    <option value="fa-archive">&#xf187; Archive</option>
 			    <option value="fa-area-chart">&#xf1fe; Area Chart</option>
 			    <option value="fa-asterisk">&#xf069; Asterisk</option>
-			    <option value="fa-area-chart">&#xf1fe; Area Chart</option>
-			    <option value="fa-area-chart">&#xf1fe; Area Chart</option>
-			    <option value="fa-area-chart">&#xf1fe; Area Chart</option>
-			    <option value="fa-area-chart">&#xf1fe; Area Chart</option>
-			    
 			</select>
 			
 			<hr/>
@@ -313,6 +266,7 @@
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/card_functions.js"></script>
     <script src="js/wow.min.js"></script>
     
     <script language="javascript" type="text/javascript">
