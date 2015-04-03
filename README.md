@@ -10,7 +10,7 @@ At the moment there is minimal functionality and the planned 'system' has not be
 
 ## Installation
 
-Pull the files from the repo and install on your server.
+	Pull the files from the repo and install on your server.
 
 ## Helping Out
 
