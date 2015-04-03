@@ -1,3 +1,15 @@
+<?php
+	session_start();
+	include ('system/config.php');
+	
+	if(isset($_SESSION['userCord3'])) {
+		$loggedin = true;
+		header('Location: ./user/');
+	} else {
+		$loggedin = false;
+	}
+?>
+
 <!DOCTYPE html>
 <!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -10,7 +22,7 @@
 	<meta name="author" content="Adsays"/>
     <link rel="shortcut icon" href="favicon.png"> 
     
-	<title>Cord3 - Error</title>
+	<title>Cord3 - Login</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Demo CSS -->
@@ -19,8 +31,6 @@
     <!-- Custom styles for this template -->
     <link href="css/login-theme-1.css" rel="stylesheet" id="fordemo">
     <link href="css/login-theme-9.css" rel="stylesheet" id="fordemo">
-    
-    <link href="css/custom.css" rel="stylesheet" id="fordemo">
     
     <link href="css/animate-custom.css" rel="stylesheet"> 
     
@@ -47,18 +57,36 @@
 			       <div class="login-box clearfix animated flipInY">
 			       		
 			        	<div class="login-logo">
-								<h2>Error</h2>
+								<h2>Welcome to Cord3</h2>
 			        	</div> 
 			        	
 			        	<div class="login-form">
+			        		<!-- Start Error box -->
+							<div class="alert alert-danger hide">
+								  <button type="button" class="close" data-dismiss="alert"> &times;</button>
+								  <h4>Error!</h4>
+								   Your account is disabled or has not been approved yet.
+							</div> <!-- End Error box -->
+			        		<form action="cord3.html" method="post"  >
+						   		 <input type="text" placeholder="User name" class="input-field" id="username_monkeyshout" name="username_monkeyshout" required/> 
+						   		 <input type="password"  placeholder="Password" class="input-field" id="password_monkeyshout" name="password_monkeyshout" required/> 
+						   		 <button type="submit" class="btn btn-login">Login</button> 
+							</form>	
 							
 							<div class="text-center text-white">
-								<p ><strong>Whoa! Something went wrong with Cord3.</strong></p>
-								<p>Give us a minute while we try fix it and everyone can get back to business.</p>
-								<br/>
-								<a class="btn btn-transparent btn-block" href="./">Reload Cord3</a>
+								<p>Cord3 is still under development!</p>
+								<p>You cannot create an account.</p>
 							</div>
-							     		
+							
+							<div class="login-links hidden"> 
+					            <a href="forgot-password.php">
+					          	   Forgot password?
+					            </a>
+					            <br />
+					            <a href="sign-up.php">
+					              Don't have an account? <strong>Sign Up</strong>
+					            </a>
+							</div>      		
 			        	</div> 			        	
 			       </div>
 			       

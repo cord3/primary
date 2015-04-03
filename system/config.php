@@ -15,7 +15,7 @@
 	
 	# Connect to the database
 	try {
-		$link = mysql_connect(DB_HOST, DB_USER, DB_PASS) or die ('<META HTTP-EQUIV="Refresh" CONTENT="0;URL=../error.html">');
+		$link = mysql_connect(DB_HOST, DB_USER, DB_PASS) or die ('<META HTTP-EQUIV="Refresh" CONTENT="0;URL=./system/error.php">');
 		$db = mysql_select_db(DB_NAME, $link);
 	} catch (Exception $e) {
 		$ad = "dd";
